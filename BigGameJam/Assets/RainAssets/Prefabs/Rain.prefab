@@ -33,9 +33,9 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
-  m_LocalRotation: {x: 0, y: .886861265, z: 0, w: .462035775}
-  m_LocalPosition: {x: 508.26059, y: 500, z: 536.789612}
-  m_LocalScale: {x: 10, y: 10, z: 10}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -4.4000001, y: 36.5999985, z: 71.9000015}
+  m_LocalScale: {x: 8.79200363, y: 5.64483643, z: 15.5089273}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -195,10 +195,10 @@ MeshParticleEmitter:
   maxEnergy: 4
   minEmission: 100
   maxEmission: 1000
-  worldVelocity: {x: 3, y: -100, z: 3}
+  worldVelocity: {x: 60, y: -100, z: 3}
   localVelocity: {x: 0, y: 0, z: 0}
   rndVelocity: {x: 0, y: 0, z: 0}
-  emitterVelocityScale: 3
+  emitterVelocityScale: 0
   tangentVelocity: {x: 0, y: 0, z: 0}
   angularVelocity: 0
   rndAngularVelocity: 0
