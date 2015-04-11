@@ -1,0 +1,5 @@
+run (6 ips)
+punch (12 ips)
+jump (12 ips)
+kick (24ips) : 01(2) 02(1) 03(3) 04(fin)
+hurt (6 ips? whatever)
