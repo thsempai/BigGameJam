@@ -3,22 +3,20 @@ using System.Collections;
 
 public class HitboxManager : MonoBehaviour {
 
-    public PolygonCollider2D frame2;
-    public PolygonCollider2D frame3;
+    public PolygonCollider2D punchframe;
 
     private PolygonCollider2D[] colliders;
 
     private PolygonCollider2D localCollider;
 
     public enum hitBoxes {
-        frame2Box,
-        frame3Box,
+        hitboxFrame1,
         clear // special case to remove all boxes
     }
     
     void Start() {
         // Set up an array so our script can more easily set up the hit boxes
-        colliders = new PolygonCollider2D[]{frame2, frame3};
+        colliders = new PolygonCollider2D[]{punchframe};
 
         // Create a polygon collider
         localCollider = gameObject.AddComponent<PolygonCollider2D>();

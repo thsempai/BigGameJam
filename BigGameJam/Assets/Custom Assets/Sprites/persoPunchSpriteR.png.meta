@@ -1,16 +1,14 @@
 fileFormatVersion: 2
-guid: 635a8e50886b694429144022262402e6
-timeCreated: 1428718860
+guid: 7acd2477772962d458f70e2a8fa59022
+timeCreated: 1428734118
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: persoRunSprite_0
-    21300002: persoRunSprite_1
-    21300004: persoRunSprite_2
-    21300006: persoRunSprite_3
-    21300008: persoRunSprite_4
-    21300010: persoRunSprite_5
-    21300012: persoRunSprite_6
+    21300000: persoPunchSpriteR_0
+    21300002: persoPunchSpriteR_1
+    21300004: persoPunchSpriteR_2
+    21300006: persoPunchSpriteR_3
+    21300008: persoPunchSpriteR_4
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -56,7 +54,7 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: persoRunSprite_0
+    - name: persoPunchSpriteR_0
       rect:
         serializedVersion: 2
         x: 0
@@ -66,7 +64,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: persoRunSprite_1
+    - name: persoPunchSpriteR_1
       rect:
         serializedVersion: 2
         x: 512
@@ -76,7 +74,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: persoRunSprite_2
+    - name: persoPunchSpriteR_2
       rect:
         serializedVersion: 2
         x: 1024
@@ -86,7 +84,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: persoRunSprite_3
+    - name: persoPunchSpriteR_3
       rect:
         serializedVersion: 2
         x: 1536
@@ -96,30 +94,10 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: persoRunSprite_4
+    - name: persoPunchSpriteR_4
       rect:
         serializedVersion: 2
         x: 2048
-        y: 0
-        width: 512
-        height: 512
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: persoRunSprite_5
-      rect:
-        serializedVersion: 2
-        x: 2560
-        y: 0
-        width: 512
-        height: 512
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: persoRunSprite_6
-      rect:
-        serializedVersion: 2
-        x: 3072
         y: 0
         width: 512
         height: 512
