@@ -32,8 +32,10 @@ using UnityStandardAssets._2D;
 
         public void TakeDamage() {
             life -= damageTaken;
-            if (life <= 0f)
+            if (life <= 0f) {
                 gameObject.GetComponent<Animator>().SetBool("Die", true);
+                gameObject.GetComponent<BoxCollider2D>().enabled = false;
+            }
         }
 
         private void Awake()
