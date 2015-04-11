@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using InControl;
 
 public class HitboxManager : MonoBehaviour {
 
@@ -8,6 +9,9 @@ public class HitboxManager : MonoBehaviour {
     private PolygonCollider2D[] colliders;
 
     private PolygonCollider2D localCollider;
+
+    public AudioSource kickSwoosh;
+    public AudioSource kickHit;
 
     public enum hitBoxes {
         hitboxFrame1,
@@ -26,6 +30,11 @@ public class HitboxManager : MonoBehaviour {
 
     void OnTriggerEnter2D(Collider2D col) {
         Debug.Log("Collider hit something!");
+        kickHit.Play();
+    }
+
+    public void launchPunch() {
+        kickSwoosh.Play();
     }
 
     public void setHitBox(hitBoxes val) {
