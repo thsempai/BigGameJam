@@ -9,6 +9,7 @@ public class Insert2 : MonoBehaviour {
     public CinematicManager manager;
     public GameObject laurent;
     public Animator dialog3;
+    public Animator dialog4;
 
     public GameObject rain;
     public Animator[] cutouts;
@@ -24,7 +25,7 @@ public class Insert2 : MonoBehaviour {
     public void SwitchCamera() {
         manager.SwitchToCamera(2);
         laurent.SetActive(true);
-        //dialog2.SetTrigger("Start");
+        dialog4.SetTrigger("Start");
         rain.SetActive(false);
         gameObject.SetActive(false);
     }

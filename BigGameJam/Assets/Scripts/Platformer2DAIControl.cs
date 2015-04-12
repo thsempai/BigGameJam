@@ -26,6 +26,9 @@ using UnityStandardAssets._2D;
             approach,
             attack,
             retreat,
+            go_to_laurent,
+            single_punch,
+            idle,
         }
 
         public states state = states.approach;
@@ -113,6 +116,22 @@ using UnityStandardAssets._2D;
             }
         }
 
+        private void SinglePunch() {
+            m_Punch = true;
+            state = states.idle;
+        }
+
+        private void Idle() {
+            return;
+        }
+
+        private void GoToLaurent() {
+            GameObject player = GameObject.FindGameObjectsWithTag("Player")[0];
+
+            if (Mathf.Abs(player.transform.position.x - transform.position.x) > 1.3f) {
+                h = 0.3f * Mathf.Sign(player.transform.position.x - transform.position.x);
+            }
+        }
 
         private void FixedUpdate()
         {
@@ -132,6 +151,15 @@ using UnityStandardAssets._2D;
                         break;
                     case (states.retreat):
                         Retreat();
+                        break;
+                    case (states.go_to_laurent):
+                        GoToLaurent();
+                        break;
+                    case (states.single_punch):
+                        SinglePunch();
+                        break;
+                    case (states.idle):
+                        Idle();
                         break;
                 }
 

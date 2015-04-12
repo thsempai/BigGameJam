@@ -27,7 +27,7 @@ AnimationClip:
   m_AnimationClipSettings:
     serializedVersion: 2
     m_StartTime: 0
-    m_StopTime: 6
+    m_StopTime: 11.5
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -54,7 +54,7 @@ AnimationClip:
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 6
+  - time: 11.5
     functionName: SwitchCamera
     data: 
     objectReferenceParameter: {fileID: 0}
