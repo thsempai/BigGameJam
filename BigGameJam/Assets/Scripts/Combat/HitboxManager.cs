@@ -16,8 +16,8 @@ public class HitboxManager : MonoBehaviour {
     public AudioSource kickHit;
     public AudioSource punchSwoosh;
     public AudioSource punchHit;
-    private bool kick;
 
+    private bool kick;
 
     public enum hitBoxes {
         hitboxFrame1,
@@ -51,6 +51,8 @@ public class HitboxManager : MonoBehaviour {
             } else {
                 punchHit.Play();
             }
+        other.GetComponent<LaurentLife>().LaurentTakeDamage();
+
         } else
         if (other.gameObject.tag == "Enemy" && (GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("CharacterPunch")
                                                 || GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("CharacterKick"))) {
@@ -91,4 +93,5 @@ public class HitboxManager : MonoBehaviour {
         }
         localCollider.pathCount = 0;
     }
+
 }

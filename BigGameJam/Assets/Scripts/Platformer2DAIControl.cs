@@ -66,7 +66,7 @@ using UnityStandardAssets._2D;
             if (timerUntilChange > 0f)
                 timerUntilChange -= Time.deltaTime;
             GameObject player = GameObject.FindGameObjectsWithTag("Player")[0];
-            if (Mathf.Abs(player.transform.position.x - transform.position.x) > 1.3f) {
+            if (Mathf.Abs(player.transform.position.x - transform.position.x) > 1.2f) {
                 h = 0.3f * Mathf.Sign(player.transform.position.x - transform.position.x);
             } else {
                 if (timerUntilChange <= 0f)
