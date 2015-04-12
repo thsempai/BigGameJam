@@ -29,6 +29,7 @@ using UnityStandardAssets._2D;
             go_to_laurent,
             single_punch,
             idle,
+            random_punch
         }
 
         public states state = states.approach;
@@ -133,6 +134,20 @@ using UnityStandardAssets._2D;
             }
         }
 
+        private void RandomPunch() {
+            GameObject player = GameObject.FindGameObjectsWithTag("Player")[0];
+            if (Vector3.Distance(player.transform.position, transform.position) < 6f) {
+                state = states.approach;
+            }
+            else {
+
+                int doOrNot = Random.Range(1, 160);
+                if (doOrNot==1) {
+                m_Punch = true;
+                }
+            }
+        }
+
         private void FixedUpdate()
         {
             // Read the inputs.
@@ -160,6 +175,9 @@ using UnityStandardAssets._2D;
                         break;
                     case (states.idle):
                         Idle();
+                        break;
+                    case (states.random_punch):
+                        RandomPunch();
                         break;
                 }
 
