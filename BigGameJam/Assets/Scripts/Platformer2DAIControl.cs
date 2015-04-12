@@ -22,6 +22,8 @@ using UnityStandardAssets._2D;
         public float damageTaken = 50f;
         public float life = 100f;
 
+        public EnemyCounter enemyCounter;
+
         public enum states {
             approach,
             attack,
@@ -37,6 +39,9 @@ using UnityStandardAssets._2D;
         public void TakeDamage() {
             life -= damageTaken;
             if (life <= 0f) {
+                if (enemyCounter) {
+                    enemyCounter.dead += 1;
+                }
                 gameObject.GetComponent<Animator>().SetBool("Die", true);
                 gameObject.GetComponent<BoxCollider2D>().enabled = false;
             }
