@@ -6631,6 +6631,7 @@ MonoBehaviour:
   damageByHit: 10
   lifeMax: 150
   life: 0
+  stageName: 02-Grand Place
 --- !u!1001 &1779777983
 Prefab:
   m_ObjectHideFlags: 0
