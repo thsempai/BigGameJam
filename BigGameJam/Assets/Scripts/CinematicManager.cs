@@ -16,7 +16,7 @@ public class CinematicManager : MonoBehaviour {
         uiManager = GetComponent<UIManager>();
         uiManager.Collect();
 
-        uiManager.DesactiveAllUI();
+        uiManager.SetAllUIActive(false);
         rain.gameObject.SetActive(false);
 
         SwitchToCamera(0);
