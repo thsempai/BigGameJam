@@ -4473,6 +4473,7 @@ MonoBehaviour:
   damageByHit: 10
   lifeMax: 150
   life: 0
+  stageName: 01-palais-royal
 --- !u!1 &1528410019
 GameObject:
   m_ObjectHideFlags: 0

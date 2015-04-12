@@ -9,6 +9,8 @@ public class LaurentLife : MonoBehaviour {
     public int lifeMax = 150;
     public int life;
 
+    public string stageName;
+
 
 	// Use this for initialization
 	void Start () {
@@ -32,6 +34,8 @@ public class LaurentLife : MonoBehaviour {
     }
 
     public void GameOver() {
+        PlayerPrefs.SetString("stage",stageName);
         Application.LoadLevel("03 - Game over");
+        
     }
 }
