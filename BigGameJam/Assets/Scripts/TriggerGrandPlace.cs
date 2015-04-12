@@ -30,6 +30,7 @@ public class TriggerGrandPlace : MonoBehaviour {
             laurent.position = new Vector3(x,y,z);
             laurentcontrols.enabled=false;
             dialog.SetTrigger("Start");
+            Destroy(gameObject);
         }
         else {
             Destroy(other.gameObject);
