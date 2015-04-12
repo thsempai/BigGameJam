@@ -161,6 +161,10 @@ Material:
         second: 303
       data:
         first:
+          name: _InvFade
+        second: .628782988
+      data:
+        first:
           name: _WaveScale
         second: .0462896563
       data:
@@ -179,10 +183,6 @@ Material:
         first:
           name: _GerstnerIntensity
         second: 1
-      data:
-        first:
-          name: _InvFade
-        second: .628782988
       data:
         first:
           name: _HeightDisplacement
@@ -258,6 +258,14 @@ Material:
         second: {r: 1, g: 1, b: 0, a: 0}
       data:
         first:
+          name: _Displacement
+        second: {r: 6.6371665, g: 20.3539829, b: -1, a: -.681415975}
+      data:
+        first:
+          name: _ShoreTiling
+        second: {r: 1, g: 1, b: .100000001, a: .100000001}
+      data:
+        first:
           name: _RefrColor
         second: {r: .523390472, g: .947761178, b: .912149608, a: 1}
       data:
@@ -319,7 +327,7 @@ Material:
       data:
         first:
           name: _SpecularColor
-        second: {r: .917910457, g: .917910457, b: .917910457, a: 1}
+        second: {r: .367647052, g: .367647052, b: .367647052, a: 1}
       data:
         first:
           name: _WorldLightDir
@@ -331,7 +339,7 @@ Material:
       data:
         first:
           name: _GAmplitude
-        second: {r: 0, g: 7, b: 0, a: 0}
+        second: {r: 0, g: 2, b: 0, a: 0}
       data:
         first:
           name: _GFrequency
@@ -372,14 +380,6 @@ Material:
         first:
           name: _WaveScale4
         second: {r: .100000001, g: .100000001, b: .00999999978, a: .00999999978}
-      data:
-        first:
-          name: _Displacement
-        second: {r: 6.6371665, g: 20.3539829, b: -1, a: -.681415975}
-      data:
-        first:
-          name: _ShoreTiling
-        second: {r: 1, g: 1, b: .100000001, a: .100000001}
       data:
         first:
           name: _DisplacementXz

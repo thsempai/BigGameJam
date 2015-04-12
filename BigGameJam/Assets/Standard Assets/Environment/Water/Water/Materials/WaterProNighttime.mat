@@ -67,7 +67,7 @@ Material:
       data:
         first:
           name: _WaveScale
-        second: .063000001
+        second: .0199999996
       data:
         first:
           name: _ReflDistort
@@ -92,7 +92,7 @@ Material:
       data:
         first:
           name: _RefrColor
-        second: {r: 1, g: 1, b: 1, a: 1}
+        second: {r: 1, g: .694117665, b: .0862745121, a: 1}
       data:
         first:
           name: _Fresnel_ST
