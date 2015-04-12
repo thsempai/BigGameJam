@@ -24,5 +24,8 @@ public class TriggerGrandPlace : MonoBehaviour {
 
             laurent.position = new Vector3(x,y,z);
         }
+        else {
+            Destroy(other.gameObject);
+        }
     }
 }
