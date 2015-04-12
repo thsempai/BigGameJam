@@ -5,7 +5,7 @@ AnimatorController:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Irish
+  m_Name: Orange
   serializedVersion: 5
   m_AnimatorParameters:
   - m_Name: Speed
@@ -894,7 +894,7 @@ AnimatorState:
   m_IKOnFeet: 0
   m_WriteDefaultValues: 1
   m_Mirror: 0
-  m_Motion: {fileID: 7400000, guid: 6e7daeeb73074ed4c988d62e4788eeed, type: 2}
+  m_Motion: {fileID: 7400000, guid: 202e919dd36a1bf48b4bc847c7e80a59, type: 2}
   m_Tag: 
 --- !u!1102 &110200395
 AnimatorState:
@@ -932,7 +932,7 @@ AnimatorState:
   m_IKOnFeet: 0
   m_WriteDefaultValues: 1
   m_Mirror: 0
-  m_Motion: {fileID: 7400000, guid: c297eb7baf61d8d4d87f9136b81b0333, type: 2}
+  m_Motion: {fileID: 7400000, guid: 6a46a296d4c3cfb49ab664da8031ec8a, type: 2}
   m_Tag: 
 --- !u!1102 &110236500
 AnimatorState:
@@ -949,7 +949,7 @@ AnimatorState:
   m_IKOnFeet: 0
   m_WriteDefaultValues: 1
   m_Mirror: 0
-  m_Motion: {fileID: 7400000, guid: 9eaf9a996631f694a869d00b4a0aead0, type: 2}
+  m_Motion: {fileID: 7400000, guid: b224d3ce0c14dfd40b6414e38be51640, type: 2}
   m_Tag: 
 --- !u!1102 &110244486
 AnimatorState:
@@ -968,7 +968,7 @@ AnimatorState:
   m_IKOnFeet: 0
   m_WriteDefaultValues: 1
   m_Mirror: 0
-  m_Motion: {fileID: 7400000, guid: af757a36a4cd67745b0db42b6222a6c2, type: 2}
+  m_Motion: {fileID: 7400000, guid: 79601ce47d9869343b7038f08555362c, type: 2}
   m_Tag: 
 --- !u!1102 &110252752
 AnimatorState:
@@ -988,7 +988,7 @@ AnimatorState:
   m_IKOnFeet: 0
   m_WriteDefaultValues: 1
   m_Mirror: 0
-  m_Motion: {fileID: 7400000, guid: 4c329bc89d152cc4495a9b719395beb3, type: 2}
+  m_Motion: {fileID: 7400000, guid: 6ac7ede37611a934cab10f3bf18f0994, type: 2}
   m_Tag: 
 --- !u!1102 &110255108
 AnimatorState:
@@ -1027,7 +1027,7 @@ AnimatorState:
   m_IKOnFeet: 0
   m_WriteDefaultValues: 1
   m_Mirror: 0
-  m_Motion: {fileID: 7400000, guid: d499692f81c7a1142a12b77b76d58770, type: 2}
+  m_Motion: {fileID: 7400000, guid: b113324266fd0b9448a22be53d239fad, type: 2}
   m_Tag: 
 --- !u!1102 &110262872
 AnimatorState:
@@ -1048,7 +1048,7 @@ AnimatorState:
   m_IKOnFeet: 0
   m_WriteDefaultValues: 1
   m_Mirror: 0
-  m_Motion: {fileID: 7400000, guid: 860f378b0b0f82644b6682a877b87777, type: 2}
+  m_Motion: {fileID: 7400000, guid: e44274b158f542d45a63ef67d89c3782, type: 2}
   m_Tag: 
 --- !u!1102 &110272440
 AnimatorState:
@@ -1070,7 +1070,7 @@ AnimatorState:
   m_IKOnFeet: 0
   m_WriteDefaultValues: 1
   m_Mirror: 0
-  m_Motion: {fileID: 7400000, guid: 860f378b0b0f82644b6682a877b87777, type: 2}
+  m_Motion: {fileID: 7400000, guid: e44274b158f542d45a63ef67d89c3782, type: 2}
   m_Tag: 
 --- !u!1107 &110700000
 AnimatorStateMachine:

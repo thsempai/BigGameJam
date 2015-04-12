@@ -32,6 +32,6 @@ public class LaurentLife : MonoBehaviour {
     }
 
     public void GameOver() {
-
+        Application.LoadLevel("03 - Game over");
     }
 }

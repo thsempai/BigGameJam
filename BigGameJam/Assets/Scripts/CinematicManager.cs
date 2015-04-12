@@ -72,7 +72,7 @@ public class CinematicManager : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 	
-        if (canSkipIntro && InputManager.ActiveDevice.Action2.WasPressed) {
+        if (canSkipIntro && (InputManager.ActiveDevice.Action2.WasPressed || Input.GetKeyDown(KeyCode.X))) {
             SkipIntro();
         }
         if (camere101.GetBool("end traveling")) {
