@@ -1,12 +1,15 @@
 ﻿using UnityEngine;
 using System.Collections;
-using UnityStandardAssets.Cameras;
+using UnityStandardAssets._2D;
 
 
 public class TriggerGrandPlace : MonoBehaviour {
 
     public Transform laurent;
     public float newZ = 8.13f;
+    public Platformer2DUserControl laurentcontrols;
+
+    public Animator dialog;
 
 	// Use this for initialization
 	void Start () {
@@ -21,10 +24,12 @@ public class TriggerGrandPlace : MonoBehaviour {
     void OnTriggerEnter2D(Collider2D other) {
         if(other.transform == laurent) {
             float z = newZ;
-            float x = laurent.position.x;
+            float x = 38f;//laurent.position.x;
             float y = laurent.position.y;
 
             laurent.position = new Vector3(x,y,z);
+            laurentcontrols.enabled=false;
+            dialog.SetTrigger("Start");
         }
         else {
             Destroy(other.gameObject);
