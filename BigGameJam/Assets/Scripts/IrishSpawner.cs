@@ -6,11 +6,6 @@ public class IrishSpawner : MonoBehaviour {
     public GameObject template;
     public EnemyCounter counter;
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
 	// Update is called once per frame
 	void Update () {
         if (Random.Range(0,250) == 25 && (counter.spawned < counter.goal)) {

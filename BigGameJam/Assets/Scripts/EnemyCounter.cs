@@ -7,6 +7,8 @@ public class EnemyCounter : MonoBehaviour {
     public int dead;
     public int spawned= 2;
 
+    public Animator lastDialog;
+
 	// Use this for initialization
 	void Start () {
 	   dead = 0;
@@ -15,7 +17,11 @@ public class EnemyCounter : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 	   if (dead >= goal) {
-        Debug.Log("SUCCESSSSSSS!!!!!");
-       }
+            GameObject[] objects = GameObject.FindGameObjectsWithTag("Enemy");
+            if (objects.Length == 0) {
+                lastDialog.SetTrigger("Start");
+            }
+
+        }
 	}
 }
