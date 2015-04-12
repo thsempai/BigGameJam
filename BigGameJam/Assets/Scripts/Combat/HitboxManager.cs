@@ -51,7 +51,8 @@ public class HitboxManager : MonoBehaviour {
             } else {
                 punchHit.Play();
             }
-        other.GetComponent<LaurentLife>().LaurentTakeDamage();
+            if (other.GetComponent<LaurentLife>())
+                other.GetComponent<LaurentLife>().LaurentTakeDamage();
 
         } else
         if (other.gameObject.tag == "Enemy" && (GetComponent<Animator>().GetCurrentAnimatorStateInfo(0).IsName("CharacterPunch")

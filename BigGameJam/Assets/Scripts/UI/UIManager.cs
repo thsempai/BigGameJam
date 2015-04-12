@@ -21,9 +21,9 @@ public class UIManager : MonoBehaviour {
         listTransform.Add(jauge);
     }
 
-    public void DesactiveAllUI() {
+    public void SetAllUIActive(bool active) {
         foreach(Transform trans in listTransform) {
-            trans.gameObject.SetActive(false);
+            trans.gameObject.SetActive(active);
         }
     }
 }
