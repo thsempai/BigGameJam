@@ -10,6 +10,8 @@ public class Dialog104 : MonoBehaviour {
     public Platformer2DAIControl drunkenIrishRedux;
     public Platformer2DUserControl laurent;
 
+    public GameObject[] toEnable;
+
     public void irishGoTo() {
         drunkenIrish.state = Platformer2DAIControl.states.go_to_laurent;
     }
@@ -27,6 +29,10 @@ public class Dialog104 : MonoBehaviour {
         drunkenIrish.state = Platformer2DAIControl.states.retreat;
         drunkenIrishRedux.state = Platformer2DAIControl.states.retreat;
         laurent.enabled = true;
+        foreach(GameObject go in toEnable) {
+            if (go)
+                go.SetActive(true);
+        }
     }
 
 }
