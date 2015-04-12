@@ -25,7 +25,7 @@ RenderSettings:
   m_AmbientGroundColor: {r: .0469999984, g: .0430000015, b: .0350000001, a: 1}
   m_AmbientIntensity: 1
   m_AmbientMode: 0
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: d4d16ca3d56fb7142a32d49bbd323836, type: 2}
   m_HaloStrength: .5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -1252,20 +1252,6 @@ PlatformEffector2D:
   m_SideFriction: 0
   m_SideBounce: 0
   m_SideAngleVariance: 0
---- !u!68 &480389230
-EdgeCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 480389223}
-  m_Enabled: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_Offset: {x: 0, y: 0}
-  m_Points:
-  - {x: 34.1958351, y: 23.1384296}
-  - {x: 52.3083, y: 23.1320477}
 --- !u!68 &480389231
 EdgeCollider2D:
   m_ObjectHideFlags: 0
@@ -1336,19 +1322,6 @@ EdgeCollider2D:
   m_Points:
   - {x: 43.4978752, y: 7.44083786}
   - {x: 55.5834084, y: 7.46602154}
---- !u!114 &480389236
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 480389223}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bcf43a84742198849b23b1386d418ff9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  laurent: {fileID: 953851697}
-  newZ: 8.13000011
 --- !u!68 &480389237
 EdgeCollider2D:
   m_ObjectHideFlags: 0
@@ -1782,7 +1755,7 @@ Light:
   serializedVersion: 6
   m_Type: 1
   m_Color: {r: .580882311, g: .580882311, b: .580882311, a: 1}
-  m_Intensity: 1
+  m_Intensity: .589999974
   m_Range: 10
   m_SpotAngle: 30
   m_CookieSize: 10
@@ -1800,7 +1773,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_Lightmapping: 4
-  m_BounceIntensity: 1
+  m_BounceIntensity: .49000001
   m_ShadowRadius: 0
   m_ShadowAngle: 0
   m_AreaSize: {x: 1, y: 1}
@@ -2402,6 +2375,62 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 798012486}
+--- !u!1 &814478609
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 814478611}
+  - 68: {fileID: 814478610}
+  - 114: {fileID: 814478612}
+  m_Layer: 0
+  m_Name: Triggers
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!68 &814478610
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 814478609}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  m_Points:
+  - {x: 34.1958351, y: 23.1384296}
+  - {x: 45.3235207, y: 23.0436306}
+--- !u!4 &814478611
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 814478609}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+--- !u!114 &814478612
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 814478609}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bcf43a84742198849b23b1386d418ff9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  laurent: {fileID: 953851697}
+  newZ: 8.13000011
 --- !u!1001 &815651480
 Prefab:
   m_ObjectHideFlags: 0
@@ -4759,11 +4788,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 8a2c984550599594099418a529b717c9, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 8a2c984550599594099418a529b717c9, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8a2c984550599594099418a529b717c9, type: 3}
@@ -5615,6 +5644,44 @@ Skybox:
   m_GameObject: {fileID: 1813043040}
   m_Enabled: 1
   m_CustomSkybox: {fileID: 2100000, guid: d4d16ca3d56fb7142a32d49bbd323836, type: 2}
+--- !u!114 &1813043047
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1813043040}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fceaeb339b971b429c4cc600acabd13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tweakMode: 0
+  screenBlendMode: 1
+  hdr: 0
+  sepBlurSpread: 2.5
+  quality: 1
+  bloomIntensity: 1
+  bloomThreshold: .5
+  bloomThresholdColor: {r: 1, g: 1, b: 1, a: 1}
+  bloomBlurIterations: 2
+  hollywoodFlareBlurIterations: 2
+  flareRotation: 0
+  lensflareMode: 1
+  hollyStretchWidth: 2.5
+  lensflareIntensity: 0
+  lensflareThreshold: .300000012
+  lensFlareSaturation: .75
+  flareColorA: {r: .400000006, g: .400000006, b: .800000012, a: .75}
+  flareColorB: {r: .400000006, g: .800000012, b: .800000012, a: .75}
+  flareColorC: {r: .800000012, g: .400000006, b: .800000012, a: .75}
+  flareColorD: {r: .800000012, g: .400000006, b: 0, a: .75}
+  lensFlareVignetteMask: {fileID: 2800000, guid: 95ef4804fe0be4c999ddaa383536cde8,
+    type: 3}
+  lensFlareShader: {fileID: 4800000, guid: 459fe69d2f6d74ddb92f04dbf45a866b, type: 3}
+  screenBlendShader: {fileID: 4800000, guid: 7856cbff0a0ca45c787d5431eb805bb0, type: 3}
+  blurAndFlaresShader: {fileID: 4800000, guid: be6e39cf196f146d5be72fbefb18ed75, type: 3}
+  brightPassFilterShader: {fileID: 4800000, guid: 0aeaa4cb29f5d4e9c8455f04c8575c8c,
+    type: 3}
 --- !u!4 &1819758273
 Transform:
   m_PrefabParentObject: {fileID: 441016, guid: f7d9d67ff8de5c944967afeca4f244ea, type: 2}
